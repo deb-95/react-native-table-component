@@ -25,7 +25,12 @@ export class Cell extends Component<CellProps> {
     const borderTopWidth = (borderStyle && borderStyle.borderWidth) || 0;
     const borderRightWidth = borderTopWidth;
     const borderColor = (borderStyle && borderStyle.borderColor) || '#000';
-
+    const widthStyle = width ? { width } : {};
+    const heightStyle = height ? { height } : {};
+    let flexStyle = flex ? {flex} : {};
+    if(width && !flex && !height && !style) {
+      flexStyle = { flex: 1 };
+    }
     return (
       <View
         style={[
@@ -35,10 +40,9 @@ export class Cell extends Component<CellProps> {
             borderColor
           },
           styles.cell,
-          width && { width },
-          height && { height },
-          flex && { flex },
-          !width && !flex && !height && !style && { flex: 1 },
+          widthStyle,
+          heightStyle,
+          flexStyle,
           style
         ]}
       >

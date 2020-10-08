@@ -18,7 +18,7 @@ export class Row extends Component<RowProps> {
     let width = widthArr ? sum(widthArr) : 0;
 
     return data ? (
-      <View style={[height && { height }, width && { width }, styles.row, style]}>
+      <View style={[height ? { height } : {}, width ? { width } : {}, styles.row, style]}>
         {data.map((item, i) => {
           const flex = flexArr && flexArr[i];
           const wth = widthArr && widthArr[i];
@@ -46,7 +46,7 @@ export class Rows extends Component<RowsProps> {
     const width = widthArr ? sum(widthArr) : 0;
 
     return data ? (
-      <View style={[flex && { flex }, width && { width }]}>
+      <View style={[flex ? { flex } : {}, width ? { width } : {}]}>
         {data.map((item, i) => {
           const height = heightArr && heightArr[i];
           return (
