@@ -1,5 +1,5 @@
 {
-  "name": "react-native-table-component",
+  "name": "@deb-95/react-native-table-component",
   "version": "1.2.1",
   "description": "Build table for react native.",
   "main": "index.ts",
