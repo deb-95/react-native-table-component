@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
-import { View, ViewPropTypes, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, ViewStyle, StyleProp, TextStyle } from 'react-native';
 
-export class Cell extends Component {
-  static propTypes = {
-    style: ViewPropTypes.style,
-    textStyle: Text.propTypes.style,
-    borderStyle: ViewPropTypes.style
-  };
+type CellProps = {
+  data: any,
+  width: number,
+  height: number,
+  style?: StyleProp<ViewStyle>,
+  textStyle: StyleProp<TextStyle>,
+  flex?: number,
+  borderStyle?: ViewStyle
+};
+
+export class Cell extends Component<CellProps> {
 
   render() {
     const { data, width, height, flex, style, textStyle, borderStyle, ...props } = this.props;
