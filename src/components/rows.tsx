@@ -5,11 +5,11 @@ import { sum } from '../utils';
 
 type RowProps = {
   data: any[];
-  widthArr: number[];
-  height: number;
-  style: StyleProp<ViewStyle>;
-  textStyle: StyleProp<TextStyle>;
-  flexArr: number[];
+  widthArr?: number[];
+  height?: number;
+  style?: StyleProp<ViewStyle>;
+  textStyle?: StyleProp<TextStyle>;
+  flexArr?: number[];
 };
 
 export class Row extends Component<RowProps> {

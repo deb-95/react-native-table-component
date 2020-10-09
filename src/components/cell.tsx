@@ -3,10 +3,10 @@ import { View, Text, StyleSheet, ViewStyle, StyleProp, TextStyle } from 'react-n
 
 type CellProps = {
   data: any,
-  width: number,
-  height: number,
+  width?: number,
+  height?: number,
   style?: StyleProp<ViewStyle>,
-  textStyle: StyleProp<TextStyle>,
+  textStyle?: StyleProp<TextStyle>,
   flex?: number,
   borderStyle?: ViewStyle
 };

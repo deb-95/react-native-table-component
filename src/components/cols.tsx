@@ -5,11 +5,11 @@ import { sum } from '../utils';
 
 type ColProps = {
   data: any[];
-  width: number;
-  style: StyleProp<ViewStyle>;
-  textStyle: StyleProp<TextStyle>;
-  flex: number;
-  heightArr: number[];
+  width?: number;
+  style?: StyleProp<ViewStyle>;
+  textStyle?: StyleProp<TextStyle>;
+  flex?: number;
+  heightArr?: number[];
 };
 
 export class Col extends Component<ColProps> {
@@ -29,11 +29,11 @@ export class Col extends Component<ColProps> {
 
 type ColsProps = {
   data: any[];
-  widthArr: number[];
-  style: StyleProp<ViewStyle>;
-  textStyle: StyleProp<TextStyle>;
-  flexArr: number[];
-  heightArr: number[];
+  widthArr?: number[];
+  style?: StyleProp<ViewStyle>;
+  textStyle?: StyleProp<TextStyle>;
+  flexArr?: number[];
+  heightArr?: number[];
 };
 
 export class Cols extends Component<ColsProps> {
