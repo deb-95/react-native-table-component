@@ -5,9 +5,7 @@
 <h1 align="center">React Native Table Component</h1>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/react-native-table-component"><img src="https://badge.fury.io/js/react-native-table-component.svg" /></a>
-  <a href="https://www.npmjs.com/package/react-native-table-component"><img src="https://img.shields.io/badge/platform-Android%20%7C%20iOS-yellow.svg" /></a>
-  <a href="https://www.npmjs.com/package/react-native-table-component"><img src="https://img.shields.io/npm/dm/react-native-table-component.svg?colorB=orange" /></a>
+  <a href="https://www.npmjs.com/package/@deb-95/react-native-table-component"><img src="https://badge.fury.io/js/%40deb-95%2Freact-native-table-component.svg" alt="npm version" height="18"></a>
 </p>
 
 This is a table component for react native.
