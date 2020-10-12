@@ -9,6 +9,7 @@ type ColProps = {
   style?: StyleProp<ViewStyle>;
   textStyle?: StyleProp<TextStyle>;
   flex?: number;
+  flexArr?: number[];
   heightArr?: number[];
 };
 
