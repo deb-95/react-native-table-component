@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet, ViewStyle, StyleProp, TextStyle } from 'react-native';
 
 type CellProps = {
-  data: any,
-  width?: number,
-  height?: number,
-  style?: StyleProp<ViewStyle>,
-  textStyle?: StyleProp<TextStyle>,
-  flex?: number,
-  borderStyle?: ViewStyle
+  data: any;
+  width?: number;
+  height?: number;
+  style?: StyleProp<ViewStyle>;
+  textStyle?: StyleProp<TextStyle>;
+  flex?: number;
+  borderStyle?: ViewStyle;
+  testID?: string;
 };
 
 export class Cell extends Component<CellProps> {

@@ -11,6 +11,7 @@ type ColProps = {
   flex?: number;
   flexArr?: number[];
   heightArr?: number[];
+  testID?: string;
 };
 
 export class Col extends Component<ColProps> {
@@ -35,6 +36,7 @@ type ColsProps = {
   textStyle?: StyleProp<TextStyle>;
   flexArr?: number[];
   heightArr?: number[];
+  testID?: string;
 };
 
 export class Cols extends Component<ColsProps> {

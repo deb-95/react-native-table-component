@@ -4,6 +4,7 @@ import { View, StyleProp, ViewStyle } from 'react-native';
 type TableProps = {
   style?: StyleProp<ViewStyle>;
   borderStyle?: ViewStyle;
+  testID?: string;
 };
 
 export class Table extends Component<PropsWithChildren<TableProps>> {
@@ -44,6 +45,7 @@ export class Table extends Component<PropsWithChildren<TableProps>> {
 type TableWrapperProps = {
   style?: StyleProp<ViewStyle>;
   borderStyle?: ViewStyle;
+  testID?: string;
 };
 
 export class TableWrapper extends Component<PropsWithChildren<TableWrapperProps>> {

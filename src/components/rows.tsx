@@ -10,6 +10,7 @@ type RowProps = {
   style?: StyleProp<ViewStyle>;
   textStyle?: StyleProp<TextStyle>;
   flexArr?: number[];
+  testID?: string;
 };
 
 export class Row extends Component<RowProps> {
@@ -36,6 +37,7 @@ type RowsProps = {
   textStyle: StyleProp<TextStyle>;
   flexArr: number[];
   heightArr: number[];
+  testID?: string;
 };
 
 export class Rows extends Component<RowsProps> {
