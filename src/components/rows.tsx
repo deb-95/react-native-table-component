@@ -15,11 +15,11 @@ type RowProps = {
 
 export class Row extends Component<RowProps> {
   render() {
-    const { data, style, widthArr, height, flexArr, textStyle, ...props } = this.props;
+    const { data, style, widthArr, height, flexArr, textStyle, testID, ...props } = this.props;
     let width = widthArr ? sum(widthArr) : 0;
 
     return data ? (
-      <View style={[height ? { height } : {}, width ? { width } : {}, styles.row, style]}>
+      <View testID={testID} style={[height ? { height } : {}, width ? { width } : {}, styles.row, style]}>
         {data.map((item, i) => {
           const flex = flexArr && flexArr[i];
           const wth = widthArr && widthArr[i];
@@ -43,12 +43,12 @@ type RowsProps = {
 export class Rows extends Component<RowsProps> {
 
   render() {
-    const { data, style, widthArr, heightArr, flexArr, textStyle, ...props } = this.props;
+    const { data, style, widthArr, heightArr, flexArr, textStyle, testID, ...props } = this.props;
     const flex = flexArr ? sum(flexArr) : 0;
     const width = widthArr ? sum(widthArr) : 0;
 
     return data ? (
-      <View style={[flex ? { flex } : {}, width ? { width } : {}]}>
+      <View testID={testID} style={[flex ? { flex } : {}, width ? { width } : {}]}>
         {data.map((item, i) => {
           const height = heightArr && heightArr[i];
           return (

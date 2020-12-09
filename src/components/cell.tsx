@@ -15,7 +15,7 @@ type CellProps = {
 export class Cell extends Component<CellProps> {
 
   render() {
-    const { data, width, height, flex, style, textStyle, borderStyle, ...props } = this.props;
+    const { data, width, height, flex, style, textStyle, borderStyle, testID, ...props } = this.props;
     const textDom = React.isValidElement(data) ? (
       data
     ) : (
@@ -34,6 +34,7 @@ export class Cell extends Component<CellProps> {
     }
     return (
       <View
+        testID={testID}
         style={[
           {
             borderTopWidth,

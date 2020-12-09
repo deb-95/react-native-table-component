@@ -27,6 +27,7 @@ export class Table extends Component<PropsWithChildren<TableProps>> {
 
     return (
       <View
+        testID={this.props.testID}
         style={[
           this.props.style,
           {
@@ -56,7 +57,7 @@ export class TableWrapper extends Component<PropsWithChildren<TableWrapperProps>
   }
 
   render() {
-    const { style } = this.props;
-    return <View style={style}>{this._renderChildren(this.props)}</View>;
+    const { style, testID } = this.props;
+    return <View style={style} testID={testID}>{this._renderChildren(this.props)}</View>;
   }
 }

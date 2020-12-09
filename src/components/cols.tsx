@@ -16,10 +16,10 @@ type ColProps = {
 
 export class Col extends Component<ColProps> {
   render() {
-    const { data, style, width, heightArr, flex, textStyle, ...props } = this.props;
+    const { data, style, width, heightArr, flex, textStyle, testID, ...props } = this.props;
 
     return data ? (
-      <View style={[width ? { width: width } : { flex: 1 }, flex ? { flex: flex } : {}, style]}>
+      <View testID={testID} style={[width ? { width: width } : { flex: 1 }, flex ? { flex: flex } : {}, style]}>
         {data.map((item, i) => {
           const height = heightArr && heightArr[i];
           return <Cell key={i} data={item} width={width} height={height} textStyle={textStyle} {...props} />;
@@ -41,11 +41,11 @@ type ColsProps = {
 
 export class Cols extends Component<ColsProps> {
   render() {
-    const { data, style, widthArr, heightArr, flexArr, textStyle, ...props } = this.props;
+    const { data, style, widthArr, heightArr, flexArr, textStyle, testID, ...props } = this.props;
     let width = widthArr ? sum(widthArr) : 0;
 
     return data ? (
-      <View style={[styles.cols, width ? { width } : {}]}>
+      <View testID={testID} style={[styles.cols, width ? { width } : {}]}>
         {data.map((item, i) => {
           const flex = flexArr && flexArr[i];
           const wth = widthArr && widthArr[i];
