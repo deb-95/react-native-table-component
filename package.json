@@ -1,6 +1,6 @@
 {
   "name": "@deb-95/react-native-table-component",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "description": "Build table for react native.",
   "main": "dist/module/index.js",
   "scripts": {
